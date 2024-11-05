@@ -1,0 +1,92 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+/* Common styles */
+@import url('./reset.css');
+@import url('./base.css');
+
+body {
+  background-color: #f8f8f8;
+}
+
+form.search {
+  width: 640px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+button {
+  padding: 8px 12px;
+  background: #4e75ff;
+  color: #fafafa;
+  border-radius: 4px;
+  border: none;
+  font-size: 12px;
+}
+
+.gallery {
+  width: 1134px;
+  background-color: white;
+  margin: 24px auto;
+  /* padding: 24px; */
+  display: flex;
+  grid-row-gap: 24px;
+  grid-column-gap: 24px;
+  flex-wrap: wrap;
+  border-radius: 8px;
+}
+
+.gallery-item {
+  border: 1px solid #808080;
+}
+
+.gallery-image {
+  width: 360px;
+  height: 200px;
+  display: block;
+}
+
+.properties {
+  display: flex;
+  justify-content: space-around;
+
+  .nameProp{
+    font-weight: bold;
+  }
+}
+
+.property {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.spin {
+  display: flex;
+  justify-content: center;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px dotted #f8f8f8;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 2s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
