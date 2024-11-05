@@ -31,7 +31,7 @@ let numberPage = 1;
 const submit = document.querySelector('.search');
 submit.addEventListener('submit', event => {
   event.preventDefault();
-  currentRequest = event.target.search.value;
+  currentRequest = event.target.search.value.trim();
   if (currentRequest != '') {
     if (currentRequest === lastRequest) numberPage++;
     else numberPage = 1;
