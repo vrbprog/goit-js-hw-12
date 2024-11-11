@@ -20,6 +20,16 @@ form.search {
   gap: 12px;
 }
 
+.more {
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+
+  button {
+    display: none;
+  }
+}
+
 button {
   padding: 8px 12px;
   background: #4e75ff;
@@ -30,7 +40,7 @@ button {
 }
 
 .gallery {
-  width: 1134px;
+  width: 1206px;
   background-color: white;
   margin: 24px auto;
   /* padding: 24px; */
@@ -46,14 +56,15 @@ button {
 }
 
 .gallery-image {
-  width: 360px;
-  height: 200px;
+  width: 220px;
+  height: 140px;
   display: block;
 }
 
 .properties {
   display: flex;
   justify-content: space-around;
+  font-size: 12px;
 
   .nameProp{
     font-weight: bold;
@@ -74,9 +85,9 @@ button {
 .loader {
   width: 48px;
   height: 48px;
-  border: 5px dotted #f8f8f8;
+  border: 5px dotted #4e75ff;
   border-radius: 50%;
-  display: inline-block;
+  display: none;
   position: relative;
   box-sizing: border-box;
   animation: rotation 2s linear infinite;
