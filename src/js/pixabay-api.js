@@ -31,7 +31,7 @@ const getPixabayImages = async (request, numPage = 1) => {
       `&q=${request}` +
       `&image_type=photo` +
       `&orientation=horizontal` +
-      `&per_page=14` +
+      `&per_page=15` +
       `&page=${numPage}` +
       `&safesearch=true`
   });

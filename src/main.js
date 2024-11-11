@@ -84,7 +84,7 @@ const showGallery = images => {
     });
     }
 
-    if ((images.totalHits - numberPage * 14) > 0) {
+    if ((images.totalHits - numberPage * 15) > 0) {
       changeMoreState(SHOW);
     }
     else {
